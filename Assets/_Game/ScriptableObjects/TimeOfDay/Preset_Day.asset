@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51006eb48cd8e5a429947e132dd08faa, type: 3}
+  m_Name: Preset_Day
+  m_EditorClassIdentifier: SurfRush::SurfRush.Core.TimeOfDayPreset
+  skyboxMaterial: {fileID: 2100000, guid: 4f246cfe2cf2c504485896f40297b5d5, type: 2}
+  sunRotation: {x: 50, y: -30, z: 0}
+  sunColor: {r: 1, g: 0.95686275, b: 0.8784314, a: 1}
+  sunIntensity: 1.5
+  obstacleTheme: {fileID: 11400000, guid: eb2e74dd6baa69b4c9e29a8af716a997, type: 2}

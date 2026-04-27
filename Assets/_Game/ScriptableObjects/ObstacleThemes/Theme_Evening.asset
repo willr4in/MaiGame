@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 029cef20f12bec84dba58d08f34f1a92, type: 3}
+  m_Name: Theme_Evening
+  m_EditorClassIdentifier: SurfRush::SurfRush.Spawn.ObstacleTheme
+  entries:
+  - prefab: {fileID: 5391835371672988054, guid: f09d8c863a01dc44f93a1347f9d7b16b, type: 3}
+    weight: 0.5
+  - prefab: {fileID: 7865739073604650342, guid: 49924cefd57da8c49bab3afcb5e69788, type: 3}
+    weight: 1.5
+  - prefab: {fileID: 7865739073604650342, guid: 46bf855a52ed02a4fa44ebfc32bfe3c2, type: 3}
+    weight: 1.5
+  - prefab: {fileID: 5391835371672988054, guid: b6bccd57d9fac704f97393695568d9f9, type: 3}
+    weight: 0.3
