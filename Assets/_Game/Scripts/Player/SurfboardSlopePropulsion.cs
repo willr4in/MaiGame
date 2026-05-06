@@ -4,7 +4,7 @@ using UnityEngine;
 namespace SurfRush.Player
 {
     /// <summary>
-    /// Главный «sauce» серфинга: проецирует гравитацию на касательную плоскость
+    /// Проецирует гравитацию на касательную плоскость
     /// волны под доской и прикладывает результат как ускоряющую силу. Так,
     /// съезжая со склона гребня, доска ускоряется, а заехав на встречный склон —
     /// тормозит. Дополнительно стабилизирует ориентацию доски по нормали воды.
@@ -54,7 +54,7 @@ namespace SurfRush.Player
             float fwLen = forward.sqrMagnitude;
             if (fwLen < 1e-4f) return;
             forward /= Mathf.Sqrt(fwLen);
-            Vector3 right = new Vector3(forward.z, 0f, -forward.x); // 90° вправо в XZ
+            Vector3 right = new Vector3(forward.z, 0f, -forward.x); // 90 вправо в XZ
 
             float vForward = Vector3.Dot(horizVel, forward);
             float vLateral = Vector3.Dot(horizVel, right);

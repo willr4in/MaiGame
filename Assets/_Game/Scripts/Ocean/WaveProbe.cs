@@ -3,10 +3,7 @@ using UnityEngine;
 namespace SurfRush.Ocean
 {
     /// <summary>
-    /// Диагностический «щуп»: ставится в сцену, рисует gizmo-крестик на
-    /// высоте воды под собой и нормаль. Если меш и щуп показывают разную
-    /// высоту в одной точке — сэмплер рассинхронизирован с мешем.
-    /// Используется для проверки Фазы 1.
+    /// проверка сэмплера в меше высоты воды
     /// </summary>
     [ExecuteAlways]
     public class WaveProbe : MonoBehaviour
@@ -29,7 +26,7 @@ namespace SurfRush.Ocean
             Gizmos.color = Color.cyan;
             Gizmos.DrawLine(surface, surface + s.normal * normalLength);
 
-            // Тонкая линия от объекта вниз к поверхности — видно где «зонд» относительно воды.
+            // Тонкая линия от объекта вниз к поверхности
             Gizmos.color = new Color(color.r, color.g, color.b, 0.3f);
             Gizmos.DrawLine(p, surface);
         }

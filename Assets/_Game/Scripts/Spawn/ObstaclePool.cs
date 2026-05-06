@@ -7,9 +7,6 @@ namespace SurfRush.Spawn
     /// Простой пул препятствий: для каждого префаба свой стек неактивных
     /// инстансов. Get/Return вместо Instantiate/Destroy — нет аллокаций
     /// в горячем цикле спавнера.
-    ///
-    /// Не дженерик, не ScriptableObject — намеренно простой MonoBehaviour,
-    /// потому что один спавнер = один пул, и он живёт ровно столько же.
     /// </summary>
     public class ObstaclePool : MonoBehaviour
     {

@@ -4,8 +4,6 @@ namespace SurfRush.Ocean
 {
     /// <summary>
     /// Назначает активный WaveProfile в WaveField. Один такой компонент на сцене.
-    /// В будущем сюда же подключим DifficultyController, который будет крутить
-    /// глобальные множители амплитуды/скорости.
     /// </summary>
     [DefaultExecutionOrder(-1000)]
     public class OceanController : MonoBehaviour

@@ -146,7 +146,6 @@ namespace SurfRush.Ocean
             float baseX = transform.position.x;
             float baseZ = transform.position.z;
 
-            // Этап 1: смещение вершин в локальные координаты.
             for (int i = 0; i < _baseLocal.Length; i++)
             {
                 Vector2 wxz = _baseWorldXZ[i];
@@ -157,7 +156,6 @@ namespace SurfRush.Ocean
                     _normals[i] = s.normal;
             }
 
-            // Этап 2 (опционально): нормали из конечных разностей.
             if (useFiniteDifferenceNormals)
                 ComputeFiniteDifferenceNormals();
 

@@ -13,9 +13,6 @@ namespace SurfRush.Spawn
     ///   спавним пачку случайных X в коридоре [-corridorHalfWidth, +corridorHalfWidth]
     ///   с проверкой на минимальное расстояние между соседями (Poisson-light).
     /// — Те, что отъехали за игрока на despawnBehindDistance, возвращаются в пул.
-    ///
-    /// В Фазе 6 DifficultyController подкрутит spawnInterval и amountPerWave
-    /// от времени игры.
     /// </summary>
     public class ObstacleSpawner : MonoBehaviour
     {
@@ -53,7 +50,6 @@ namespace SurfRush.Spawn
         private readonly List<Obstacle> _active = new();
         private float _nextSpawnTime;
 
-        // Публичный API для DifficultyController: можно крутить параметры в рантайме.
         public float SpawnInterval { get => spawnInterval; set => spawnInterval = Mathf.Max(0.05f, value); }
         public int AmountPerWave { get => amountPerWave; set => amountPerWave = Mathf.Max(1, value); }
         public float CorridorHalfWidth { get => corridorHalfWidth; set => corridorHalfWidth = Mathf.Max(1f, value); }

@@ -3,8 +3,7 @@ using UnityEngine;
 namespace SurfRush.Player
 {
     /// <summary>
-    /// Временная камера для Фазы 3: следит за target с заданным мировым
-    /// смещением, не наследуя его наклон/масштаб. В Фазе 4 заменим на Cinemachine.
+    /// Временная камера 
     /// </summary>
     public class SimpleFollowCamera : MonoBehaviour
     {

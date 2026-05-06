@@ -115,8 +115,6 @@ namespace SurfRush.Ocean
             return s;
         }
 
-        /// <summary>Быстрая версия — только высота. Используй для физики, где не нужны
-        /// горизонтальные смещения и нормаль.</summary>
         public static float SampleHeight(float worldX, float worldZ)
         {
             if (s_profile == null || s_profile.waves == null) return 0f;

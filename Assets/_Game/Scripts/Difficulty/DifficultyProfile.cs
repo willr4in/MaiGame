@@ -6,8 +6,7 @@ namespace SurfRush.Difficulty
     /// Профиль сложности: набор кривых, по которым DifficultyController
     /// со временем модулирует мир. Все кривые принимают на вход playTime в
     /// секундах и возвращают значение конкретной характеристики.
-    ///
-    /// Edit в Inspector: двойной клик по кривой → редактор Animation Curve.
+    /// Фактически нарастание сложности по времени движения
     /// </summary>
     [CreateAssetMenu(fileName = "DifficultyProfile", menuName = "SurfRush/Difficulty Profile", order = 2)]
     public class DifficultyProfile : ScriptableObject

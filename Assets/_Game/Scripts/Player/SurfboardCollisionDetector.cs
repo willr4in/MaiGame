@@ -14,8 +14,6 @@ namespace SurfRush.Player
     {
         private void OnCollisionEnter(Collision collision)
         {
-            // Был ли это Obstacle? Используем GetComponentInParent на случай,
-            // если коллайдер сидит на дочернем объекте (визуальная модель).
             Obstacle obstacle = collision.collider.GetComponentInParent<Obstacle>();
             if (obstacle == null) return;
 
