@@ -25,6 +25,9 @@ Unity `6000.3.8f1`, URP, C#, New Input System, Cinemachine 3, PhysX, Shader Grap
   солнца и набор препятствий (пальмы и рифы для дня, лодки и обломки кораблей
   для вечера).
 
+## Видео
+Демо геймплея: https://drive.google.com/file/d/1W-Le6i_B0CuuWKbxPy4-dc-YRZjE_5Fr/view?usp=drive_link
+
 ## Как устроена вода
 
 `WaveField` — статический сэмплер высоты и нормали воды. Внутри суммируются
